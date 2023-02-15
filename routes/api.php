@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\BookController as AdminBookController;
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +17,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('auth/login', [AuthController::class, 'login']);
+
+Route::get('books', [BookController::class, 'index']);
+
+Route::middleware('auth:sanctum')->group( function () {
+    Route::get('auth/logout', [UserController::class, 'logout']);
+
+    Route::get('users/me', [UserController::class, 'profile']);
+
+    Route::prefix('admin')->group(function () {
+        Route::get('books', [AdminBookController::class, 'index']);
+        Route::delete('books/{id}/delete', [AdminBookController::class, 'delete']);
+    });
 });

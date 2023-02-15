@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "6ccb23dbdafdcd6604de69fe2b6f0407",
     "packages": [
         {
             "name": "brick/math",
@@ -1373,6 +1373,67 @@
             "time": "2023-01-10T18:03:30+00:00"
         },
         {
+            "name": "laravel/ui",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "810adddcf4e2538b0d1ed470c3a5220ffe761370"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/810adddcf4e2538b0d1ed470c3a5220ffe761370",
+                "reference": "810adddcf4e2538b0d1ed470c3a5220ffe761370",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21|^10.0",
+                "illuminate/filesystem": "^9.21|^10.0",
+                "illuminate/support": "^9.21|^10.0",
+                "illuminate/validation": "^9.21|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v4.2.0"
+            },
+            "time": "2023-01-10T12:13:29+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "2.3.8",
             "source": {
@@ -2201,6 +2262,58 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "pcsaini/laravel-api-response-builder",
+            "version": "v1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pcsaini/laravel-api-response-builder.git",
+                "reference": "e1dfc5fa8cda8f535546062fbc95df504468cffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pcsaini/laravel-api-response-builder/zipball/e1dfc5fa8cda8f535546062fbc95df504468cffc",
+                "reference": "e1dfc5fa8cda8f535546062fbc95df504468cffc",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">= 9.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "7.*",
+                "phpunit/phpunit": "9.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pcsaini\\ResponseBuilder\\ResponseBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pcsaini\\ResponseBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Prem Chand Saini",
+                    "email": "prem@signaturetech.in"
+                }
+            ],
+            "description": "A super simple package allowing for consistent API responses throughout your Laravel application",
+            "support": {
+                "issues": "https://github.com/pcsaini/laravel-api-response-builder/issues",
+                "source": "https://github.com/pcsaini/laravel-api-response-builder/tree/v1.5"
+            },
+            "time": "2023-01-22T08:58:11+00:00"
         },
         {
             "name": "phpoption/phpoption",
