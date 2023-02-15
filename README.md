@@ -1,15 +1,7 @@
 # Packt+ Assessment
----
-
-## Table of contents ##
-
-*  [Installation & Setup](#installation--setup)
-*  [Examples](#examples)
-*  [License](#license)
-
 
 ## Installation & Configuration ##
-First clone the github repo:
+First clone the GitHub repo:
 ```
 git clone https://github.com/pcsaini/packt-assessment.git
 ```
@@ -83,7 +75,7 @@ sortType: asc or desc
 ```
 
 Response
-```json
+```
 {
     "status": true,
     "data": [
