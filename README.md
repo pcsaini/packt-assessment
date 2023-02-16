@@ -18,6 +18,27 @@ VITE_API_BASE_URL=http://localhost:8000/api/
 ```
 Note: You need to add your api base url
 
+### Setup Database
+Please add the database details on `.env`
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={YOUR_DB_NAME}
+DB_USERNAME={YOUR_DB_USERNAME}
+DB_PASSWORD={YOUR_DB_PASSWORD}
+```
+
+Migrate the Database
+```
+php artisan migrate
+```
+
+Seed the Database
+```
+php artisan db:seed
+```
+
 ### Install Frontend
 ```
 npm install
@@ -63,13 +84,14 @@ password: password
 
 ## Customer Books API
 ```
-[GET] {{base_url}}books?page=1&limit=10&sortBy=title&sortType=desc
+[GET] {{base_url}}books?page=1&limit=10&search=query&sortBy=title&sortType=desc
 ```
 
 Query Parameters
 ```
 page: page number
 limit: per page item
+search: query string for the search
 sortBy: column name for the sort
 sortType: asc or desc
 ```
